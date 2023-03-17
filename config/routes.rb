@@ -27,6 +27,12 @@ Rails.application.routes.draw do
         get :me
         post :create
       end
+
+      namespace :courses do 
+        # api/v1/courses/list
+        get :list
+      end
     end
   end
 end
+
