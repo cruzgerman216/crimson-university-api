@@ -31,7 +31,13 @@ Rails.application.routes.draw do
       namespace :courses do 
         # api/v1/courses/list
         get :list
+
       end
+      # api/v1/students/create
+      namespace :students do 
+        post :create 
+      end
+
     end
   end
 end
